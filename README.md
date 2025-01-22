@@ -1,4 +1,4 @@
-# Casual Quiz  🎮🧠
+# Casual Quiz  🧠
 
 Welcome to the **Casual Quiz 
 **! 🎉 This is a fun and interactive quiz app where you can test your knowledge on various topics. Whether you're on your way to becoming a quiz master or just want to have fun, this app is perfect for you!
