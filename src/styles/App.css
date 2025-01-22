@@ -1,0 +1,122 @@
+/* src/styles/App.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.signup-page,
+.quiz-page {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-page h2,
+.quiz-page h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+/* Container for the start page */
+.start-page {
+  display: flex;
+  flex-direction: column; /* Arrange elements vertically */
+  justify-content: center; /* Vertically center */
+  align-items: center; /* Horizontally center */
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f7fb; /* Light background color */
+  padding: 20px; /* Some padding around the content */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  text-align: center;
+}
+
+/* Title Styling */
+.start-page h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px; /* Spacing below the title */
+  text-transform: uppercase; /* Add uppercase effect */
+}
+
+/* Paragraph Styling */
+.start-page p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Input field styling */
+.start-page input {
+  width: 80%; /* Take up most of the container width */
+  max-width: 400px; /* Limit the width */
+  padding: 10px;
+  margin-bottom: 20px; /* Space below the input */
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners for the input */
+  font-size: 1rem;
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input field focus effect */
+.start-page input:focus {
+  border-color: #3498db; /* Blue border when focused */
+}
+
+/* Button Styling */
+.start-page button {
+  padding: 12px 25px;
+  background-color: #3498db; /* Attractive blue color */
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.start-page button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Error message styling */
+.start-page .error {
+  color: #e74c3c; /* Red color for error messages */
+  font-size: 0.9rem;
+  margin-top: 10px; /* Spacing above the error message */
+}

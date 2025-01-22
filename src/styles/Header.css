@@ -1,0 +1,168 @@
+/* Header.css */
+
+
+/* src/styles/Header.css */
+
+/* src/styles/Header.css */
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 10px;   /* Adjust size of text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  /* 3D Effect */
+  color: #fff;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.2),  /* Light shadow for subtle 3D effect */
+    2px 2px 5px rgba(0, 0, 0, 0.4),  /* Darker shadow for depth */
+    3px 3px 10px rgba(0, 0, 0, 0.6); /* Darkest shadow for deeper effect */
+
+  /* Optional: Add a slight transformation for perspective */
+  transform: rotateX(10deg) rotateY(10deg);
+  transition: transform 0.5s ease, text-shadow 0.5s ease;
+}
+/* Header container */
+.header-title {
+  
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  position: absolute; /* Position the header at a fixed point on the screen */
+  top: 0; /* Align the header to the top */
+  left: 0; /* Align the header to the left */
+  width: 160px; /* Set fixed width */
+  height: 100px; /* Set fixed height */
+  background-color: #f0f0f0; /* Background color for the header */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visual effect */
+}
+
+/* Animating the 3D movement of header text */
+.header-container h1 {
+  font-size: 3rem;
+  color: #333;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: moveText 5s linear infinite; /* Adjust time for speed */
+  transform-style: preserve-3d; /* Allow child elements to be transformed in 3D */
+  margin: 0; /* Remove default margin */
+}
+
+/* Keyframe to animate the text in a 3D manner */
+@keyframes moveText {
+  0% {
+    transform: translateX(-20px) rotateY(-20deg);
+  }
+  25% {
+    transform: translateX(20px) rotateY(20deg);
+  }
+  50% {
+    transform: translateX(-20px) rotateY(-20deg);
+  }
+  75% {
+    transform: translateX(20px) rotateY(20deg);
+  }
+  100% {
+    transform: translateX(0) rotateY(0deg);
+  }
+}
+
+
+.welcome-container h1 {
+  animation: scrollText 10s linear infinite; /* Adjust the duration (10s) for scrolling speed */
+  font-size: 2.5rem;
+  color: #333;
+  display: inline-block;
+  padding-left: 100%; /* Initially starts off-screen to the right */
+}
+
+
+
+h1:hover {
+  /* On hover, make the 3D effect stronger */
+  transform: rotateX(0deg) rotateY(0deg);
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3),
+    4px 4px 8px rgba(0, 0, 0, 0.5),
+    6px 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin-top: 60px;    /* Ensure content doesn't get hidden behind the fixed header */
+}
+
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 80px;
+ 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+  margin: 10px;
+  padding: 30px;
+}
+
+.nav-link:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+}
